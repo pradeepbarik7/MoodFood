@@ -1,0 +1,320 @@
+{
+  "moods": {
+    "happy": {
+      "name": "Happy",
+      "description": "Celebrate joy with vibrant, energizing foods and upbeat music",
+      "color": "#FFD700",
+      "icon": "\ud83d\ude0a",
+      "ayurvedic_insight": "Sattvic foods promote clarity and joy by balancing all three doshas",
+      "foods": [
+        {
+          "name": "Mango Kulfi Smoothie Bowl",
+          "image": "mango-kulfi-smoothie.jpg",
+          "description": "A festive blend of mango, cardamom, and pistachios topped with rose petals",
+          "ingredients": [
+            "Mango",
+            "Greek yogurt",
+            "Cardamom",
+            "Pistachios",
+            "Rose petals",
+            "Honey"
+          ],
+          "mood_benefit": "Mango boosts serotonin; cardamom lifts spirits and reduces stress",
+          "indian_spice_power": "Cardamom (elaichi) is known as the 'Queen of Spices' and has mood-uplifting properties",
+          "recipe_steps": [
+            "Blend mango pulp with yogurt and ground cardamom",
+            "Pour into bowl and top with chopped pistachios",
+            "Garnish with rose petals and drizzle honey"
+          ]
+        },
+        {
+          "name": "Turmeric Golden Milk Oats",
+          "image": "golden-milk-oats.jpg",
+          "description": "Creamy oats infused with turmeric, cinnamon, and jaggery",
+          "ingredients": [
+            "Oats",
+            "Turmeric",
+            "Cinnamon",
+            "Ginger",
+            "Jaggery",
+            "Almond milk"
+          ],
+          "mood_benefit": "Turmeric's curcumin enhances mood and reduces inflammation",
+          "indian_spice_power": "Turmeric (haldi) is considered sacred in Indian culture and promotes emotional balance",
+          "recipe_steps": [
+            "Heat almond milk with turmeric, cinnamon, and ginger",
+            "Add oats and cook until creamy",
+            "Sweeten with jaggery and serve warm"
+          ]
+        }
+      ],
+      "music": {
+        "playlist_name": "Bollywood Happy Hits",
+        "spotify_embed": "https://open.spotify.com/embed/playlist/37i9dQZF1DX0XUsuxWHRQd",
+        "description": "Uplifting Bollywood and international tracks to boost your mood",
+        "sample_tracks": [
+          "Jai Ho - A.R. Rahman",
+          "Happy - Pharrell Williams",
+          "Nagada Sang Dhol - Ram-Leela"
+        ]
+      }
+    },
+    "sad": {
+      "name": "Sad",
+      "description": "Comfort foods and soothing melodies to nurture your soul",
+      "color": "#6495ED",
+      "icon": "\ud83d\ude22",
+      "ayurvedic_insight": "Warm, nourishing Kapha-pacifying foods provide emotional grounding",
+      "foods": [
+        {
+          "name": "Mom's Dal Chawal",
+          "image": "dal-chawal.jpg",
+          "description": "Simple yellow dal with basmati rice, ghee, and cumin tadka",
+          "ingredients": [
+            "Yellow dal",
+            "Basmati rice",
+            "Ghee",
+            "Cumin",
+            "Turmeric",
+            "Ginger"
+          ],
+          "mood_benefit": "Comfort food that triggers nostalgic memories and provides emotional warmth",
+          "indian_spice_power": "Cumin (jeera) aids digestion and has calming properties",
+          "recipe_steps": [
+            "Cook dal with turmeric and ginger until soft",
+            "Prepare cumin tadka in ghee",
+            "Serve over rice with extra ghee"
+          ]
+        },
+        {
+          "name": "Kheer with Almonds",
+          "image": "badam-kheer.jpg",
+          "description": "Creamy rice pudding with cardamom, almonds, and saffron",
+          "ingredients": [
+            "Basmati rice",
+            "Milk",
+            "Almonds",
+            "Cardamom",
+            "Saffron",
+            "Sugar"
+          ],
+          "mood_benefit": "Almonds contain tryptophan; saffron is known as 'sunshine spice' for mood",
+          "indian_spice_power": "Saffron (kesar) is traditionally used to treat depression and boost mood",
+          "recipe_steps": [
+            "Slow-cook rice in milk until creamy",
+            "Add ground almonds and cardamom",
+            "Garnish with saffron and serve warm"
+          ]
+        }
+      ],
+      "music": {
+        "playlist_name": "Healing Ragas",
+        "spotify_embed": "https://open.spotify.com/embed/playlist/37i9dQZF1DX4sWSpwq3LiO",
+        "description": "Classical ragas and soothing melodies for emotional healing",
+        "sample_tracks": [
+          "Raga Yaman - Ustad Ravi Shankar",
+          "Om Namah Shivaya",
+          "Tum Hi Ho - Aashiqui 2"
+        ]
+      }
+    },
+    "stressed": {
+      "name": "Stressed",
+      "description": "Calming foods and relaxing sounds to ease tension",
+      "color": "#FF6347",
+      "icon": "\ud83d\ude30",
+      "ayurvedic_insight": "Vata-pacifying warm, grounding foods calm the nervous system",
+      "foods": [
+        {
+          "name": "Ashwagandha Moon Milk",
+          "image": "ashwagandha-moon-milk.jpg",
+          "description": "Warm milk with ashwagandha, nutmeg, and jaggery",
+          "ingredients": [
+            "Warm milk",
+            "Ashwagandha powder",
+            "Nutmeg",
+            "Jaggery",
+            "Ghee"
+          ],
+          "mood_benefit": "Ashwagandha is a powerful adaptogen that reduces cortisol and stress",
+          "indian_spice_power": "Nutmeg (jaiphal) has natural sedative properties and promotes restful sleep",
+          "recipe_steps": [
+            "Heat milk with a pinch of nutmeg",
+            "Whisk in ashwagandha powder",
+            "Sweeten with jaggery and add a drop of ghee"
+          ]
+        },
+        {
+          "name": "Masala Quinoa Bowl",
+          "image": "masala-quinoa.jpg",
+          "description": "Quinoa cooked with garam masala, vegetables, and ghee",
+          "ingredients": [
+            "Quinoa",
+            "Mixed vegetables",
+            "Garam masala",
+            "Ghee",
+            "Coriander",
+            "Mint"
+          ],
+          "mood_benefit": "Complete protein with stress-fighting spices for sustained energy",
+          "indian_spice_power": "Garam masala blend warms the body and has anxiety-reducing compounds",
+          "recipe_steps": [
+            "Cook quinoa with turmeric and salt",
+            "Saut\u00e9 vegetables with garam masala",
+            "Mix together and garnish with fresh herbs"
+          ]
+        }
+      ],
+      "music": {
+        "playlist_name": "Meditation & Mantras",
+        "spotify_embed": "https://open.spotify.com/embed/playlist/37i9dQZF1DWZqd5JICZI0u",
+        "description": "Peaceful mantras and meditation music for stress relief",
+        "sample_tracks": [
+          "Om Gam Ganapataye",
+          "Shanti Mantra",
+          "Breathe - Prodigy"
+        ]
+      }
+    },
+    "relaxed": {
+      "name": "Relaxed",
+      "description": "Light, fresh foods and ambient sounds for peaceful moments",
+      "color": "#98FB98",
+      "icon": "\ud83d\ude0c",
+      "ayurvedic_insight": "Cooling Pitta-pacifying foods maintain balance and tranquility",
+      "foods": [
+        {
+          "name": "Cucumber Mint Raita",
+          "image": "cucumber-raita.jpg",
+          "description": "Cool yogurt with cucumber, mint, and roasted cumin",
+          "ingredients": [
+            "Greek yogurt",
+            "Cucumber",
+            "Fresh mint",
+            "Roasted cumin",
+            "Black salt",
+            "Lemon"
+          ],
+          "mood_benefit": "Cooling properties calm Pitta dosha and provide hydration",
+          "indian_spice_power": "Mint (pudina) has cooling and calming effects on the mind",
+          "recipe_steps": [
+            "Grate cucumber and drain excess water",
+            "Mix with yogurt and chopped mint",
+            "Season with roasted cumin and black salt"
+          ]
+        },
+        {
+          "name": "Fennel Seed Tea",
+          "image": "fennel-tea.jpg",
+          "description": "Soothing tea made with fennel seeds and fresh mint",
+          "ingredients": [
+            "Fennel seeds",
+            "Fresh mint",
+            "Honey",
+            "Lemon",
+            "Warm water"
+          ],
+          "mood_benefit": "Fennel aids digestion and has mild sedative properties",
+          "indian_spice_power": "Fennel (saunf) is traditionally used after meals to promote relaxation",
+          "recipe_steps": [
+            "Steep fennel seeds in hot water for 10 minutes",
+            "Add fresh mint leaves",
+            "Sweeten with honey and add lemon juice"
+          ]
+        }
+      ],
+      "music": {
+        "playlist_name": "Chillout Fusion",
+        "spotify_embed": "https://open.spotify.com/embed/playlist/37i9dQZF1DX4WYpdgoIcn6",
+        "description": "Indo-fusion and chill electronic music for relaxation",
+        "sample_tracks": [
+          "Bombay Theme - A.R. Rahman",
+          "Mumbai - Talvin Singh",
+          "Sunset Lover - Petit Biscuit"
+        ]
+      }
+    },
+    "energetic": {
+      "name": "Energetic",
+      "description": "Power foods and dynamic beats to fuel your active lifestyle",
+      "color": "#FF4500",
+      "icon": "\u26a1",
+      "ayurvedic_insight": "Rajasic foods with warming spices stimulate energy and motivation",
+      "foods": [
+        {
+          "name": "Chickpea Chaat Power Bowl",
+          "image": "chana-chaat.jpg",
+          "description": "Protein-rich chickpeas with vegetables, chutneys, and sprouted mung",
+          "ingredients": [
+            "Chickpeas",
+            "Onions",
+            "Tomatoes",
+            "Coriander",
+            "Tamarind chutney",
+            "Mung sprouts"
+          ],
+          "mood_benefit": "High protein and B-vitamins support energy production and brain function",
+          "indian_spice_power": "Chaat masala contains energizing spices that stimulate appetite and vitality",
+          "recipe_steps": [
+            "Mix boiled chickpeas with chopped vegetables",
+            "Add sprouts and fresh coriander",
+            "Toss with chutneys and chaat masala"
+          ]
+        },
+        {
+          "name": "Masala Chai Energy Balls",
+          "image": "chai-energy-balls.jpg",
+          "description": "No-bake energy balls with dates, nuts, and chai spices",
+          "ingredients": [
+            "Dates",
+            "Almonds",
+            "Cardamom",
+            "Cinnamon",
+            "Ginger powder",
+            "Coconut"
+          ],
+          "mood_benefit": "Natural sugars provide quick energy; spices enhance circulation",
+          "indian_spice_power": "Chai spices (masala) are warming and energizing, boosting metabolism",
+          "recipe_steps": [
+            "Blend dates and nuts until sticky",
+            "Add chai spice powder",
+            "Roll into balls and coat with coconut"
+          ]
+        }
+      ],
+      "music": {
+        "playlist_name": "Bhangra Beats",
+        "spotify_embed": "https://open.spotify.com/embed/playlist/37i9dQZF1DX76Wlfdnj7AP",
+        "description": "High-energy Punjabi and dance tracks to pump you up",
+        "sample_tracks": [
+          "Jai Ho - A.R. Rahman",
+          "Mundian To Bach Ke - Panjabi MC",
+          "Thunder - Imagine Dragons"
+        ]
+      }
+    }
+  },
+  "website_content": {
+    "hero": {
+      "title": "MoodFood",
+      "subtitle": "Discover the perfect fusion of Indian culinary wisdom and global flavors for your current mood",
+      "description": "Ancient Ayurvedic principles meet modern nutritional science, curated with soul-stirring music"
+    },
+    "features": [
+      "Mood-based recommendations blending Indian spices with global nutrition science",
+      "Curated Spotify playlists mixing Bollywood, classical ragas, and international hits",
+      "Easy recipes featuring mood-boosting Indian ingredients and Ayurvedic principles",
+      "Shareable mood combinations connecting food, music, and emotional well-being"
+    ],
+    "indian_wisdom": {
+      "title": "The Indian Connection",
+      "description": "Indian cuisine has always understood the deep connection between food and emotions. From the warming comfort of dal chawal to the cooling relief of cucumber raita, every dish is designed to balance both body and mind.",
+      "ayurvedic_principles": [
+        "Vata (Air + Space): Warm, grounding foods for anxiety and restlessness",
+        "Pitta (Fire + Water): Cooling, sweet foods for anger and irritability",
+        "Kapha (Earth + Water): Light, spicy foods for depression and lethargy"
+      ],
+      "spice_science": "Indian spices aren't just flavor enhancers - they're mood medicine. Turmeric fights depression, cardamom lifts spirits, ashwagandha reduces stress, and saffron brightens mood naturally."
+    }
+  }
+}

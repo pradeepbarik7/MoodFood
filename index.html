@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoodFood - Find Your Perfect Mood with Music and Food</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header with theme toggle -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>🍽️ MoodFood</h1>
+                </div>
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon" id="themeIcon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section with Banner -->
+    <section class="hero">
+        <div class="hero-banner">
+            <div class="banner-placeholder">
+                <div class="banner-content">
+                    <i class="fas fa-music banner-icon"></i>
+                    <i class="fas fa-utensils banner-icon"></i>
+                </div>
+            </div>
+        </div>
+        <div class="hero-overlay">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">MoodFood</h1>
+                    <p class="hero-subtitle">Find Your Perfect Mood with Music and Food</p>
+                    <p class="hero-description">Ancient Ayurvedic principles meet modern nutritional science, curated
+                        with your personal music selection</p>
+                    <div class="scroll-indicator">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mood Selector Section -->
+    <section class="mood-selector" id="moodSelector">
+        <div class="container">
+            <div class="centered-content">
+                <h2 class="section-title">How are you feeling today?</h2>
+                <div class="mood-grid">
+                    <div class="mood-card" data-mood="happy">
+                        <div class="mood-icon">😊</div>
+                        <h3 class="mood-name">Happy</h3>
+                        <p class="mood-description">Celebrate joy with vibrant, energizing foods</p>
+                    </div>
+                    <div class="mood-card" data-mood="sad">
+                        <div class="mood-icon">😢</div>
+                        <h3 class="mood-name">Sad</h3>
+                        <p class="mood-description">Comfort foods to nurture your soul</p>
+                    </div>
+                    <div class="mood-card" data-mood="stressed">
+                        <div class="mood-icon">😰</div>
+                        <h3 class="mood-name">Stressed</h3>
+                        <p class="mood-description">Calming foods to ease tension</p>
+                    </div>
+                    <div class="mood-card" data-mood="relaxed">
+                        <div class="mood-icon">😌</div>
+                        <h3 class="mood-name">Relaxed</h3>
+                        <p class="mood-description">Light, fresh foods for peaceful moments</p>
+                    </div>
+                    <div class="mood-card" data-mood="energetic">
+                        <div class="mood-icon">⚡</div>
+                        <h3 class="mood-name">Energetic</h3>
+                        <p class="mood-description">Power foods to fuel your active lifestyle</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Playlist Section -->
+    <section class="playlist-section">
+        <div class="container">
+            <div class="centered-content">
+                <h2 class="section-title">Add Your Custom Playlist</h2>
+                <div class="playlist-manager">
+                    <div class="playlist-input-section">
+                        <h3>Add Spotify Playlist</h3>
+                        <p class="instructions">Get your Spotify embed code by going to Spotify → Share → Embed Playlist
+                        </p>
+                        <div class="form-group">
+                            <label for="playlistName" class="form-label">Playlist Name</label>
+                            <input type="text" id="playlistName" class="form-control" placeholder="My Awesome Playlist">
+                        </div>
+                        <div class="form-group">
+                            <label for="playlistEmbed" class="form-label">Spotify Embed Code</label>
+                            <textarea id="playlistEmbed" class="form-control" rows="3"
+                                placeholder="Paste your Spotify embed iframe code here..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="playlistMood" class="form-label">Assign to Mood</label>
+                            <select id="playlistMood" class="form-control">
+                                <option value="">Select a mood</option>
+                                <option value="happy">Happy</option>
+                                <option value="sad">Sad</option>
+                                <option value="stressed">Stressed</option>
+                                <option value="relaxed">Relaxed</option>
+                                <option value="energetic">Energetic</option>
+                            </select>
+                        </div>
+                        <button class="btn btn--primary" id="addPlaylist">
+                            <i class="fas fa-plus"></i> Add Playlist
+                        </button>
+                    </div>
+
+                    <div class="custom-playlists" id="customPlaylists">
+                        <h3>Your Custom Playlists</h3>
+                        <div class="playlist-list" id="playlistList">
+                            <div class="playlist-item default-playlist">
+                                <div class="playlist-info">
+                                    <h4>My Custom Happy Playlist</h4>
+                                    <p>Happy mood • Your personalized music selection</p>
+                                </div>
+                                <span class="status status--success">Active</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mood Content Section -->
+    <section class="mood-content hidden" id="moodContent">
+        <div class="container">
+            <div class="centered-content">
+                <div class="back-button">
+                    <button class="btn btn--outline" id="backToMoods">
+                        <i class="fas fa-arrow-left"></i> Back to Moods
+                    </button>
+                </div>
+
+                <div class="mood-header">
+                    <div class="mood-title-section">
+                        <span class="current-mood-icon"></span>
+                        <h2 class="current-mood-title"></h2>
+                    </div>
+                    <p class="current-mood-description"></p>
+                    <div class="ayurvedic-insight">
+                        <i class="fas fa-leaf"></i>
+                        <span class="insight-text"></span>
+                    </div>
+                </div>
+
+                <div class="content-grid">
+                    <!-- Food Recommendations -->
+                    <div class="food-section">
+                        <h3 class="section-subtitle">Recommended Foods</h3>
+                        <div class="food-grid" id="foodGrid">
+                            <!-- Food cards will be populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <!-- Music Section -->
+                    <div class="music-section">
+                        <h3 class="section-subtitle">Perfect Playlist</h3>
+                        <div class="music-card">
+                            <div class="playlist-info">
+                                <h4 class="playlist-name"></h4>
+                                <p class="playlist-description"></p>
+                                <div class="playlist-controls">
+                                    <button class="btn btn--sm btn--outline" id="switchPlaylist">
+                                        <i class="fas fa-shuffle"></i> Switch Playlist
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="spotify-embed" id="spotifyEmbedContainer">
+                                <!-- Spotify iframe will be inserted here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="combo-section">
+                    <button class="btn btn--primary btn--lg create-combo-btn" id="createCombo">
+                        <i class="fas fa-plus"></i>
+                        Create My MoodCombo
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="centered-content">
+                <div class="about-content">
+                    <h2>The Indian Connection</h2>
+                    <p>Indian cuisine has always understood the deep connection between food and emotions. From the
+                        warming comfort of dal chawal to the cooling relief of cucumber raita, every dish is designed to
+                        balance both body and mind.</p>
+
+                    <div class="ayurvedic-principles">
+                        <h3>Ayurvedic Principles</h3>
+                        <div class="principles-grid">
+                            <div class="principle-card">
+                                <h4>Vata (Air + Space)</h4>
+                                <p>Warm, grounding foods for anxiety and restlessness</p>
+                            </div>
+                            <div class="principle-card">
+                                <h4>Pitta (Fire + Water)</h4>
+                                <p>Cooling, sweet foods for anger and irritability</p>
+                            </div>
+                            <div class="principle-card">
+                                <h4>Kapha (Earth + Water)</h4>
+                                <p>Light, spicy foods for depression and lethargy</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="spice-science">
+                        <h3>Spice Science</h3>
+                        <p>Indian spices aren't just flavor enhancers - they're mood medicine. Turmeric fights
+                            depression, cardamom lifts spirits, ashwagandha reduces stress, and saffron brightens mood
+                            naturally.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MoodCombo Modal -->
+    <div class="modal hidden" id="comboModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Your MoodCombo</h3>
+                <button class="modal-close" id="closeModal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="combo-display">
+                    <div class="combo-mood">
+                        <span class="combo-mood-icon"></span>
+                        <h4 class="combo-mood-name"></h4>
+                    </div>
+                    <div class="combo-items">
+                        <div class="combo-food">
+                            <h5>Food Choice</h5>
+                            <p class="selected-food-name"></p>
+                        </div>
+                        <div class="combo-music">
+                            <h5>Music Vibe</h5>
+                            <p class="selected-playlist-name"></p>
+                        </div>
+                    </div>
+                    <div class="combo-message">
+                        <p>Perfect for when you're feeling <span class="mood-state"></span></p>
+                    </div>
+                </div>
+                <div class="share-buttons">
+                    <button class="btn btn--outline share-btn">
+                        <i class="fab fa-twitter"></i> Tweet
+                    </button>
+                    <button class="btn btn--outline share-btn">
+                        <i class="fab fa-facebook"></i> Share
+                    </button>
+                    <button class="btn btn--outline share-btn">
+                        <i class="fas fa-copy"></i> Copy Link
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Playlist Selection Modal -->
+    <div class="modal hidden" id="playlistModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Choose Playlist</h3>
+                <button class="modal-close" id="closePlaylistModal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="available-playlists" id="availablePlaylists">
+                    <!-- Available playlists will be populated here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading overlay -->
+    <div class="loading hidden" id="loading">
+        <div class="spinner"></div>
+        <p>Preparing your mood experience...</p>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>MoodFood by Pradeep Barik</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

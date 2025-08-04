@@ -1,0 +1,289 @@
+{
+  "moods": {
+    "happy": {
+      "name": "Happy",
+      "description": "Celebrate joy with vibrant, energizing foods and upbeat music",
+      "color": "#FFD700",
+      "icon": "\ud83d\ude0a",
+      "foods": [
+        {
+          "name": "Rainbow Smoothie Bowl",
+          "image": "smoothie-bowl.jpg",
+          "description": "A colorful blend of tropical fruits topped with fresh berries, granola, and coconut flakes",
+          "ingredients": [
+            "Mango",
+            "Pineapple",
+            "Banana",
+            "Berries",
+            "Granola",
+            "Coconut"
+          ],
+          "mood_benefit": "Rich in vitamin C and antioxidants to boost serotonin levels",
+          "recipe_steps": [
+            "Blend frozen mango, pineapple, and banana until smooth",
+            "Pour into bowl and arrange toppings in colorful patterns",
+            "Enjoy immediately for best texture"
+          ]
+        },
+        {
+          "name": "Avocado Toast with Poached Egg",
+          "image": "avocado-toast.jpg",
+          "description": "Creamy avocado on whole grain bread topped with a perfectly poached egg",
+          "ingredients": [
+            "Avocado",
+            "Whole grain bread",
+            "Egg",
+            "Lemon",
+            "Salt",
+            "Pepper"
+          ],
+          "mood_benefit": "B vitamins and omega-3s support dopamine production",
+          "recipe_steps": [
+            "Toast bread to golden perfection",
+            "Mash avocado with lemon juice and seasonings",
+            "Top with poached egg and enjoy"
+          ]
+        }
+      ],
+      "music": {
+        "playlist_name": "Good Vibes Only",
+        "spotify_embed": "https://open.spotify.com/embed/playlist/37i9dQZF1DXdPec7aLTmlC",
+        "description": "Upbeat hits to keep your spirits high",
+        "sample_tracks": [
+          "Happy - Pharrell Williams",
+          "Can't Stop the Feeling - Justin Timberlake",
+          "Good as Hell - Lizzo"
+        ]
+      }
+    },
+    "sad": {
+      "name": "Sad",
+      "description": "Comfort foods and soothing melodies to nurture your soul",
+      "color": "#6495ED",
+      "icon": "\ud83d\ude22",
+      "foods": [
+        {
+          "name": "Homemade Chicken Soup",
+          "image": "chicken-soup.jpg",
+          "description": "Warm, nourishing soup with tender chicken, vegetables, and healing herbs",
+          "ingredients": [
+            "Chicken breast",
+            "Carrots",
+            "Celery",
+            "Onion",
+            "Garlic",
+            "Herbs"
+          ],
+          "mood_benefit": "Tryptophan in chicken helps produce mood-stabilizing serotonin",
+          "recipe_steps": [
+            "Simmer chicken with vegetables in seasoned broth",
+            "Shred chicken and return to pot",
+            "Serve hot with fresh herbs"
+          ]
+        },
+        {
+          "name": "Dark Chocolate Oatmeal",
+          "image": "chocolate-oatmeal.jpg",
+          "description": "Creamy oats with rich dark chocolate and a touch of honey",
+          "ingredients": [
+            "Rolled oats",
+            "Dark chocolate",
+            "Milk",
+            "Honey",
+            "Vanilla"
+          ],
+          "mood_benefit": "Dark chocolate releases endorphins and contains mood-boosting compounds",
+          "recipe_steps": [
+            "Cook oats with milk until creamy",
+            "Stir in dark chocolate and honey",
+            "Top with extra chocolate shavings"
+          ]
+        }
+      ],
+      "music": {
+        "playlist_name": "Comfort & Healing",
+        "spotify_embed": "https://open.spotify.com/embed/playlist/3Kz5KBE3Ksupz9odBGwze6",
+        "description": "Gentle melodies for emotional healing",
+        "sample_tracks": [
+          "Skinny Love - Bon Iver",
+          "Mad World - Tears for Fears",
+          "The Night We Met - Lord Huron"
+        ]
+      }
+    },
+    "stressed": {
+      "name": "Stressed",
+      "description": "Calming foods and relaxing sounds to ease tension",
+      "color": "#FF6347",
+      "icon": "\ud83d\ude30",
+      "foods": [
+        {
+          "name": "Chamomile Tea & Almonds",
+          "image": "tea-almonds.jpg",
+          "description": "Soothing herbal tea paired with magnesium-rich almonds",
+          "ingredients": [
+            "Chamomile tea",
+            "Raw almonds",
+            "Honey",
+            "Lemon"
+          ],
+          "mood_benefit": "Chamomile reduces cortisol; magnesium in almonds helps relax muscles",
+          "recipe_steps": [
+            "Steep chamomile tea for 5 minutes",
+            "Add honey and lemon to taste",
+            "Enjoy with a handful of almonds"
+          ]
+        },
+        {
+          "name": "Salmon with Quinoa",
+          "image": "salmon-quinoa.jpg",
+          "description": "Omega-3 rich salmon with protein-packed quinoa and steamed vegetables",
+          "ingredients": [
+            "Salmon fillet",
+            "Quinoa",
+            "Broccoli",
+            "Olive oil",
+            "Herbs"
+          ],
+          "mood_benefit": "Omega-3 fatty acids reduce inflammation and support brain health",
+          "recipe_steps": [
+            "Bake salmon with herbs and olive oil",
+            "Cook quinoa according to package directions",
+            "Steam broccoli until tender"
+          ]
+        }
+      ],
+      "music": {
+        "playlist_name": "Peaceful Piano",
+        "spotify_embed": "https://open.spotify.com/embed/playlist/0JQ5DAqbMKFzHmL4tf05da",
+        "description": "Calming piano melodies for stress relief",
+        "sample_tracks": [
+          "Weightless - Marconi Union",
+          "Clair de Lune - Debussy",
+          "River Flows in You - Yiruma"
+        ]
+      }
+    },
+    "relaxed": {
+      "name": "Relaxed",
+      "description": "Light, fresh foods and ambient sounds for peaceful moments",
+      "color": "#98FB98",
+      "icon": "\ud83d\ude0c",
+      "foods": [
+        {
+          "name": "Mediterranean Salad",
+          "image": "mediterranean-salad.jpg",
+          "description": "Fresh greens with cucumber, tomatoes, olives, and feta cheese",
+          "ingredients": [
+            "Mixed greens",
+            "Cucumber",
+            "Tomatoes",
+            "Olives",
+            "Feta",
+            "Olive oil"
+          ],
+          "mood_benefit": "Mediterranean diet supports overall brain health and mood stability",
+          "recipe_steps": [
+            "Combine fresh vegetables in a bowl",
+            "Crumble feta cheese on top",
+            "Drizzle with olive oil and herbs"
+          ]
+        },
+        {
+          "name": "Green Tea & Berries",
+          "image": "green-tea-berries.jpg",
+          "description": "Antioxidant-rich green tea with fresh mixed berries",
+          "ingredients": [
+            "Green tea",
+            "Blueberries",
+            "Strawberries",
+            "Honey"
+          ],
+          "mood_benefit": "L-theanine in green tea promotes relaxation; berries provide antioxidants",
+          "recipe_steps": [
+            "Steep green tea for 3 minutes",
+            "Serve with fresh berries",
+            "Add honey if desired"
+          ]
+        }
+      ],
+      "music": {
+        "playlist_name": "Chill Vibes",
+        "spotify_embed": "https://open.spotify.com/embed/playlist/37i9dQZF1DX4WYpdgoIcn6",
+        "description": "Mellow tunes for relaxation",
+        "sample_tracks": [
+          "Breathe Me - Sia",
+          "Sunset Lover - Petit Biscuit",
+          "Kiara - Bonobo"
+        ]
+      }
+    },
+    "energetic": {
+      "name": "Energetic",
+      "description": "Power foods and dynamic beats to fuel your active lifestyle",
+      "color": "#FF4500",
+      "icon": "\u26a1",
+      "foods": [
+        {
+          "name": "Protein Power Bowl",
+          "image": "protein-bowl.jpg",
+          "description": "Quinoa, grilled chicken, sweet potato, and tahini dressing",
+          "ingredients": [
+            "Quinoa",
+            "Chicken breast",
+            "Sweet potato",
+            "Spinach",
+            "Tahini"
+          ],
+          "mood_benefit": "Complex carbs and protein provide sustained energy and support neurotransmitter function",
+          "recipe_steps": [
+            "Grill chicken and roast sweet potato",
+            "Layer over quinoa and spinach",
+            "Drizzle with tahini dressing"
+          ]
+        },
+        {
+          "name": "Banana Nut Energy Bars",
+          "image": "energy-bars.jpg",
+          "description": "Homemade bars with banana, nuts, and dark chocolate chips",
+          "ingredients": [
+            "Bananas",
+            "Oats",
+            "Almonds",
+            "Dark chocolate",
+            "Honey"
+          ],
+          "mood_benefit": "Natural sugars provide quick energy; nuts offer sustained fuel",
+          "recipe_steps": [
+            "Mash bananas and mix with dry ingredients",
+            "Press into pan and bake",
+            "Cool and cut into bars"
+          ]
+        }
+      ],
+      "music": {
+        "playlist_name": "Power Workout",
+        "spotify_embed": "https://open.spotify.com/embed/playlist/37i9dQZF1DX76Wlfdnj7AP",
+        "description": "High-energy tracks to fuel your day",
+        "sample_tracks": [
+          "Thunder - Imagine Dragons",
+          "Stronger - Kelly Clarkson",
+          "Eye of the Tiger - Survivor"
+        ]
+      }
+    }
+  },
+  "website_content": {
+    "hero": {
+      "title": "MoodFood",
+      "subtitle": "Discover the perfect food and music combination for your current mood",
+      "description": "Science-backed nutrition meets curated playlists to enhance your emotional well-being"
+    },
+    "features": [
+      "Mood-based food recommendations backed by nutritional science",
+      "Curated Spotify playlists for every emotional state",
+      "Easy-to-follow recipes with mood-boosting ingredients",
+      "Shareable mood combinations for social connection"
+    ]
+  }
+}
