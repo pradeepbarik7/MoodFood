@@ -15,4 +15,4 @@ This web app suggests music and food based on your current mood.
 2. Enjoy matching music and food
 3. Toggle dark mode for fun!
 
-   Thanks for reaching 
+   Thanks for reaching.
