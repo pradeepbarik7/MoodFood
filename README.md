@@ -16,4 +16,4 @@ This web app suggests music and food based on your current mood.
 3. Toggle dark mode for fun!
 
    Thanks for reaching
-   Pradeep Barik .
+   Pradeep Barik 
